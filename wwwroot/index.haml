@@ -1,8 +1,9 @@
 = sass :main
-.container_12
-	#header.grid_12
+#header.container_12
+	.grid_12
 		%h1 Krapar Cheatsheet
 	.clear
+.container_12
 	#TOC.grid_4.push_8
 		%h3 Table of Contents
 		%ol
@@ -16,6 +17,15 @@
 				%a{:href=>"#prepositions"} Prepositions
 			%li
 				%a{:href=>"#verbs"} Verbs
+		%h3 Legend
+		%table
+			%tr
+				%td
+					Nom.
+				%td
+					Nomative
+				%td
+					Ուղական
 	.item.grid_8.pull_4
 		%a{:name=>"noun_cases"}
 		%h2 Noun Cases
@@ -217,7 +227,7 @@
 				%td նոքաւք
 				%td նոքիմբք, նոքումբք
 		%p
-			The declension of այս, այդ; սա, դա; սոյն, դոյն follows exactly the same pattern
+			The declension of այս, այդ; սա, դա; սոյն, դոյն follows exactly the same pattern.
 		%table.grid_3.alpha
 			%tr.top
 				%th
