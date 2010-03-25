@@ -1,7 +1,7 @@
 = sass :main
 #header.container_12
 	.grid_12
-		%h1 Krapar Cheatsheet
+		%h1 Grabar Cheatsheet
 	.clear
 .container_12
 	#TOC.grid_4.push_8
@@ -11,12 +11,17 @@
 				%a{:href=>"#noun_cases"} Noun Cases
 			%li
 				%a{:href=>"#pronouns"} Pronouns
-			%li
-				%a{:href=>"#possessive_pronouns"} Possessive Pronouns
+				%ol
+					%li
+						%a{:href=>"#reflexive_intensive_pronouns"} Reflexive and Intensive Pronouns
+					%li
+						%a{:href=>"#possessive_pronouns"} Possessive Pronouns
 			%li
 				%a{:href=>"#prepositions"} Prepositions
 			%li
 				%a{:href=>"#verbs"} Verbs
+			%li
+				%a{:href=>"#glossary"} Glossary
 		%h3 Legend
 		%table
 			%tr
@@ -292,11 +297,201 @@
 				%th	Instr.
 				%td	մեւք
 				%td ձեւք
-	.clear
-	.item.grid_8
+		.clear
+		%a{:name=>"reflexive_intensive_pronouns"}
+		%h3 Reflexive and Intensive Pronouns
+		%table.grid_3.alpha
+			%tr.top
+				%th
+				%th Singular
+				%th Plural
+			%tr
+				%th Nom.
+				%td &mdash;
+				%td &mdash;
+			%tr
+				%th Acc.
+				%td &mdash;
+				%td Իւրեանս
+			%tr
+				%th Gen.
+				%td Իւր
+				%td Իւրեանց
+			%tr
+				%th Dat.
+				%td Իւր
+				%td Իւրեանց
+			%tr
+				%th Loc.
+				%td Իւր
+				%td իւրեանս
+			%tr
+				%th Abl.
+				%td իւրմէ
+				%td իւրեանց
+			%tr
+				%th Instr.
+				%td իւրեւ, իւրեաւ, իւրեամբք
+				%td իւրեմբք
+		%table.grid_3.omega
+			%tr.top
+				%th
+				%th Singular
+				%th Plural
+			%tr
+				%th Nom.
+				%td ինքն
+				%td ինքեանք
+			%tr
+				%th Acc.
+				%td ինքն
+				%td ինքեանս
+			%tr
+				%th Gen.
+				%td ինքեան
+				%td ինքեանց
+			%tr
+				%th Dat.
+				%td ինքեան
+				%td ինքեանց
+			%tr
+				%th Loc.
+				%td ինքեան
+				%td ինքեանս
+			%tr
+				%th Abl.
+				%td ինքենէ
+				%td ինքեանց
+			%tr
+				%th Instr.
+				%td ինքեամբ
+				%td ինքեամբք
+		.clear
 		%a{:name=>"possessive_pronouns"}
-		%h2 Possessive Pronouns
-		%p INSERT
+		%h3 Possessive Pronouns
+		%table.grid_4.alpha
+			%tr.top
+				%th Singular
+				%th My
+				%th Your
+				%th His, Her (reflexive)
+			%tr
+				%th Nom.
+				%td իմ
+				%td քո
+				%td իւր
+			%tr
+				%th Acc.
+				%td իմ
+				%td քո
+				%td իւր
+			%tr
+				%th Gen.
+				%td իմոյ
+				%td քոյոյ, քոյ
+				%td իրոյ
+			%tr
+				%th Dat.
+				%td իմում
+				%td քում
+				%td իւրում
+			%tr
+				%th Loc.
+				%td իմում
+				%td քում
+				%td իւրում
+			%tr
+				%th Abl.
+				%td իմմէ
+				%td քումէ
+				%td իւրմէ
+			%tr
+				%th Instr.
+				%td իմով
+				%td քոյով
+				%td իւրով
+		%table.grid_4.omega
+			%tr.top
+				%th Plural
+				%th My
+				%th Your
+				%th His, Her (reflexive)
+			%tr
+				%th Nom.
+				%td իմբ
+				%td քոյք
+				%td իւր
+			%tr
+				%th Acc.
+				%td իմս
+				%td քոյս
+				%td իւր
+			%tr
+				%th Gen.
+				%td իմոց
+				%td քոյոց, քոց
+				%td իրոց
+			%tr
+				%th Dat.
+				%td իմոց
+				%td քուոց
+				%td իւրոց
+			%tr
+				%th Loc.
+				%td իմո
+				%td քոյս
+				%td իւրում
+			%tr
+				%th Abl.
+				%td իմոց
+				%td քոյոց
+				%td իւրոց
+			%tr
+				%th Instr.
+				%td իմովք
+				%td քոյովք
+				%td իւրովք
+		%table.grid_4.omega
+			%tr.top
+				%th 
+				%th Our
+				%th Your (pl.)
+				%th Their
+			%tr
+				%th Nom.
+				%td մեր
+				%td ձեր
+				%td [իւրեանց]
+			%tr
+				%th Acc.
+				%td մեր
+				%td ձեր
+				%td 
+			%tr
+				%th Gen.
+				%td մերոյ
+				%td ձերոյ
+				%td 
+			%tr
+				%th Dat.
+				%td մերում
+				%td ձերում
+				%td 
+			%tr
+				%th Loc.
+				%td մերում
+				%td ձերում
+				%td 
+			%tr
+				%th Abl.
+				%td մերմէ
+				%td ձերմէ
+				%td 
+			%tr
+				%th Instr.
+				%td մերով
+				%td ձերով
+				%td 
 	.clear
 	.item.grid_8
 		%a{:name=>"prepositions"}
@@ -308,3 +503,7 @@
 		%h2 Verbs
 		%p INSERT
 	.clear
+	.item.grid_8
+		%a{:name=>"glossary"}
+		%h2 Glossary
+		%p Lorem ipsum...
