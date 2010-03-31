@@ -3,12 +3,12 @@ body
 	:color #EEE
 	:text-shadow #555 1px 1px 0px
 a
-	:color #66CCFF
+	:color #69D2E7
 	:text-decoration none
 	&:hover
-		:color #9CE8FF
+		:color #ADD8C7
 	&:active
-		:color #D3F0FF
+		:color #fefefe
 #header
 	:background-color #333
 	:padding-top 1em
@@ -18,24 +18,41 @@ a
 	:-webkit-border-bottom-right-radius .5em
 	:-moz-border-radius-bottomleft .5em
 	:-webkit-border-bottom-left-radius .5em
-.item table
-	tr.top th
-		:font-weight 200
-		:font-style italic
-	th
-		:text-align left
-	th,td
-		:padding-right 5px
-.item table.prepositions
-	th
-		:color #FFFF66
-		:font-size 2em
-		:line-height 0.5em
-		:text-align right
-	td.plus
-		:color #aaa
-	td.plus + td
-		:width 2em
-		:font-style italic
-	td.last
-		:padding-bottom 20px
+	:-moz-box-shadow #111 1px 1px 0px
+	:-webkit-box-shadow #111 1px 1px 0px
+	:box-shadow #111 1px 1px 0px
+	:border-bottom #454545 1px solid
+#TOC
+	ol
+		:list-style-type upper-roman
+		ol
+			:list-style-type lower-roman
+			:margin-bottom 0px
+.item 
+	h2
+		:background #444
+		:padding 0px 5px
+		:text-shadow #222 1px 1px 0px
+	h3
+		:color #ADD8C7
+	table
+		tr.top th
+			:font-weight 200
+			:font-style italic
+		th
+			:text-align left
+		th,td
+			:padding-right 5px
+	table.prepositions
+		th
+			:color #CCFF00
+			:font-size 2em
+			:line-height 0.5em
+			:text-align right
+		td.plus
+			:color #aaa
+		td.plus + td
+			:width 2em
+			:font-style italic
+		td.last
+			:padding-bottom 20px
