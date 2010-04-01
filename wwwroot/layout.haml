@@ -2,6 +2,8 @@
 %html{ html_attrs('en-en') }
 	%head
 		%meta{:'http-equiv' => "Content-Type", :content => "text/html; charset=utf-8"}
+		%link{:href=>"http://s3.amazonaws.com/grabarcs.com/favicon.png", :rel=>"icon", :type=>"image/png"}
+		%link{:href=>"http://s3.amazonaws.com/grabarcs.com/iphoneIcon.png", :rel=>"apple-touch-icon"}
 		%title Grabar Cheatsheet
 		- ['reset','text','960','smoothness/jquery-ui-1.8.custom','app'].each do |css|
 			%link{ :href => "/stylesheets/#{css}.css", :rel => "stylesheet", :type => "text/css", :media => "screen", :charset => "utf-8" }
