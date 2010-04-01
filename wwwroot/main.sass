@@ -2,6 +2,7 @@ body
 	:background-color #666
 	:color #EEE
 	:text-shadow #555 1px 1px 0px
+	:font-family 'Helvetica Neue',Arial,'Arian AMU','Liberation Sans',FreeSans,sans-serif
 a
 	:color #69D2E7
 	:text-decoration none
@@ -23,11 +24,24 @@ a
 	:box-shadow #111 1px 1px 0px
 	:border-bottom #454545 1px solid
 #TOC
+	:position relative
+	:top 0
 	ol
 		:list-style-type upper-roman
 		ol
 			:list-style-type lower-roman
 			:margin-bottom 0px
+table
+	th
+		:text-align left
+		:white-space nowrap
+	tr.top th
+		:font-weight 200
+		:font-style italic
+	th:first-child
+		:text-align right
+	th,td
+		:padding-right 5px
 .item 
 	h2
 		:background #444
@@ -35,14 +49,6 @@ a
 		:text-shadow #222 1px 1px 0px
 	h3
 		:color #ADD8C7
-	table
-		tr.top th
-			:font-weight 200
-			:font-style italic
-		th
-			:text-align left
-		th,td
-			:padding-right 5px
 	table.prepositions
 		th
 			:color #CCFF00
@@ -56,3 +62,16 @@ a
 			:font-style italic
 		td.last
 			:padding-bottom 20px
+#footer
+	:background #CDD7B6
+	:-moz-border-radius-topright .5em
+	:-webkit-border-top-right-radius .5em
+	:-moz-border-radius-topleft .5em
+	:-webkit-border-top-left-radius .5em
+	:-moz-box-shadow #eee 1px 1px 0px
+	:-webkit-box-shadow #eee 1px 1px 0px
+	:box-shadow #eee 1px 1px 0px
+	:border-top #E8ECC9 1px solid
+	:text-shadow #E8ECC9 1px 1px 0px
+	h4
+		:color #666

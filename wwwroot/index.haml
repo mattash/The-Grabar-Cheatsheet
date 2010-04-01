@@ -21,17 +21,39 @@
 				%a{:href=>"#prepositions"} Prepositions
 			%li
 				%a{:href=>"#verbs"} Verbs
+				%ol
+					%li
+						%a{:href=>"#present"} Present
+					%li
+						%a{:href=>"#past"} Past
+					%li
+						%a{:href=>"#future"} Future
 			%li
 				%a{:href=>"#glossary"} Glossary
 		%h3 Legend
 		%table
 			%tr
-				%td
-					Nom.
-				%td
-					Nomative
-				%td
-					Ուղական
+				%th	Nom.
+				%td	Nomative
+				%td	Ուղական
+			%tr
+				%th Acc.
+				%td Accusative
+			%tr
+				%th Gen.
+				%td Genitive
+			%tr
+				%th Dat.
+				%td Dative
+			%tr
+				%th Loc.
+				%td Locative
+			%tr
+				%th Abl.
+				%td Ablative
+			%tr
+				%th Instr
+				%td Instrumental 
 	.item.grid_8.pull_4
 		%a{:name=>"noun_cases"}
 		%h2 Noun Cases
@@ -452,7 +474,7 @@
 				%td իմովք
 				%td քոյովք
 				%td իւրովք
-		%table.grid_4.omega
+		%table
 			%tr.top
 				%th 
 				%th Our
@@ -576,9 +598,90 @@
 	.item.grid_8
 		%a{:name=>"verbs"}
 		%h2 Verbs
-		%p INSERT
+		%a{:name=>"present"}
+		%h3 Present Indicative
+		%table.grid_4.alpha
+			%tr.top
+				%th singular
+				%th love
+				%th being loved
+				%th weep
+				%th pour
+				%th exist
+			%tr
+				%th I
+				%td սիրեմ
+				%td սիրԻմ
+				%td լամ
+				%td հեղում
+				%td գոմ
+			%tr
+				%th You
+				%td սիրես
+				%td սիրիս
+				%td լաս
+				%td հեղուս
+				%td (գոս)
+			%tr
+				%th He,She,It
+				%td սիրէ
+				%td սիրի
+				%td լայ
+				%td հեղու
+				%td գոյ
+		%table.grid_4.omega
+			%tr.top
+				%th singular
+				%th love
+				%th being loved
+				%th weep
+				%th pour
+				%th exist
+			%tr
+				%th We
+				%td սիրեմք
+				%td սիրԻմք
+				%td լամք
+				%td հեղումք
+				%td (գոմք)
+			%tr
+				%th You All
+				%td սիրեք
+				%td սիրիք
+				%td լայք
+				%td հեղուք
+				%td գոյք
+			%tr
+				%th They
+				%td սիրեն
+				%td սիրին
+				%td լան
+				%td հեղուն
+				%td գոն
+		
+		%h3 Imperfect
+		
+		%h3 Present Subjunctive
+		
+		%a{:name=>"past"}
+		%h3 Past Participle
+
+		%a{:name=>"future"} 
+		%h3 Aorist
+
+		%h3 Aorist Subjunctive
 	.clear
 	.item.grid_8
 		%a{:name=>"glossary"}
 		%h2 Glossary
 		%p Lorem ipsum...
+	.clear
+#footer.container_12
+	.grid_12
+		.grid_4.alpha
+			%h4 Credits
+		.grid_4
+			%h4 About
+		.grid_4.omega
+			%h4 Resources
+	.clear
