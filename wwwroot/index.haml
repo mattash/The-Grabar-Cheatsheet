@@ -7,7 +7,7 @@
 			This site is currently in active development.
 		%h1 Grabar Cheatsheet
 	.clear
-.container_12
+#content.container_12
 	#TOC.grid_4.push_8
 		%h3 Table of Contents
 		%ol
@@ -33,652 +33,661 @@
 						%a{:href=>"#future"} Future
 			%li
 				%a{:href=>"#glossary"} Glossary
-		%h3 Legend
-		%table
-			%tr
-				%th	Nom.
-				%td	Nomative
-				%td	Ուղական
-			%tr
-				%th Acc.
-				%td Accusative
-			%tr
-				%th Gen.
-				%td Genitive
-			%tr
-				%th Dat.
-				%td Dative
-			%tr
-				%th Loc.
-				%td Locative
-			%tr
-				%th Abl.
-				%td Ablative
-			%tr
-				%th Instr
-				%td Instrumental 
-	.item.grid_8.pull_4
-		%a{:name=>"noun_cases"}
-		%h2 Noun Cases
-		%table
-			%tr.top
-				%th
-					%em Singular
-				%th	year
-				%th	word
-				%th	sea
-				%th	mouth
-			%tr
-				%th	Nom.
-				%td	ամ
-				%td բան
-				%td ծով
-				%td բերան
-			%tr
-				%th	Acc.
-				%td	ամ
-				%td բան
-				%td ծով
-				%td բերան
-			%tr
-				%th	Gen.
-				%td	ամի
-				%td բանի
-				%td ծովու
-				%td բերանոյ
-			%tr
-				%th	Dat.
-				%td	ամի
-				%td բանի
-				%td ծովու
-				%td բերանոյ
-			%tr
-				%th	Loc.
-				%td	ամի
-				%td բանի
-				%td ծովու
-				%td բերան
-			%tr
-				%th	Abl.
-				%td	ամէ
-				%td բանէ
-				%td ծովէ
-				%td բերանոյ
-			%tr
-				%th	Instr.
-				%td	ամաւ
-				%td բանիւ
-				%td ծովու
-				%td բերանով
-		%table
-			%tr.top
-				%th
-					%em Plural
-				%th	year
-				%th	word
-				%th	sea
-				%th	mouth
-			%tr
-				%th	Nom.
-				%td	ամք
-				%td բանք
-				%td ծովք
-				%td բերանք
-			%tr
-				%th	Acc.
-				%td	ամս
-				%td բանս
-				%td ծովս
-				%td բերանս
-			%tr
-				%th	Gen.
-				%td	ամաց
-				%td բանից
-				%td ծովուց
-				%td բերանոց
-			%tr
-				%th	Dat.
-				%td	ամաց
-				%td բանից
-				%td ծովուց
-				%td բերանոց
-			%tr
-				%th	Loc.
-				%td	ամս
-				%td բանս
-				%td ծովս
-				%td բերանս
-			%tr
-				%th	Abl.
-				%td	ամաց
-				%td բանից
-				%td ծովից
-				%td բերանոց
-			%tr
-				%th	Instr.
-				%td	ամաւք
-				%td բանիւք
-				%td ծովուք
-				%td բերանովք
-	.clear
-	.item.grid_8
-		%a{:name=>"pronouns"}
-		%h2 Pronouns
-		%table.grid_3.alpha
-			%tr.top
-				%th
-					%em Singular
-			%tr
-				%th	Nom.
-				%td	այն
-				%td 
-				%td նա
-				%td նոյն
-			%tr
-				%th	Acc.
-				%td	այն
-				%td 
-				%td նա
-				%td նոյն
-			%tr
-				%th	Gen.
-				%td	այնր
-				%td այնորիկ
-				%td նորին
-				%td նորին,նորուն
-			%tr
-				%th	Dat.
-				%td	այնմ
-				%td այնմիկ
-				%td նմա
-				%td նմին
-			%tr
-				%th	Loc.
-				%td	այնմ
-				%td այնմիկ
-				%td նմա
-				%td նմին
-			%tr
-				%th	Abl.
-				%td	այնմ
-				%td այնմանէ
-				%td նմանէ
-				%td նմին
-			%tr
-				%th	Instr.
-				%td	այն
-				%td այնուիկ
-				%td նովաւ
-				%td նովին,նովիմբ
-
-		%table.grid_5.omega
-			%tr.top
-				%th
-					%em Plural
-			%tr
-				%th	Nom.
-				%td	այնք
-				%td այնոքիկ
-				%td նոքա
-				%td նոքին,նոյնք
-			%tr
-				%th	Acc.
-				%td	այնս
-				%td այնոսիկ
-				%td նոսա
-				%td նոսին, նոյնս
-			%tr
-				%th	Gen.
-				%td	այնց
-				%td այնոցիկ
-				%td նոցա
-				%td նոցին, նոցունց
-			%tr
-				%th	Dat.
-				%td	այնց
-				%td այնոցիկ
-				%td նոցա
-				%td նոցին, նոցունց
-			%tr
-				%th	Loc.
-				%td	այնս
-				%td այնոսիկ
-				%td նոսա
-				%td նոսին, նոյնս
-			%tr
-				%th	Abl.
-				%td	այնց, այնցանէ
-				%td այնոցիկ
-				%td նոցա, նոցանէ
-				%td նոցին, նոցունց
-			%tr
-				%th	Instr.
-				%td	այնուք
-				%td այնոքիւք
-				%td նոքաւք
-				%td նոքիմբք, նոքումբք
-		%p
-			The declension of այս, այդ; սա, դա; սոյն, դոյն follows exactly the same pattern.
-		%table.grid_3.alpha
-			%tr.top
-				%th
-					%em Singular
-			%tr
-				%th	Nom.
-				%td	ես
-				%td դու
-			%tr
-				%th	Acc.
-				%td	իս
-				%td իմ
-			%tr
-				%th Gen.
-				%td իմ
-				%td քո
-			%tr
-				%th	Dat.
-				%td	ինձ
-				%td քեզ
-			%tr
-				%th	Loc.
-				%td	իս
-				%td քեզ
-			%tr
-				%th	Abl.
-				%td	ինէն
-				%td ինձէն
-			%tr
-				%th	Instr.
-				%td	ինեւ
-				%td քեւ
-		%table.grid_3.omega
-			%tr.top
-				%th
-					%em Plural
-			%tr
-				%th	Nom.
-				%td	մեք
-				%td դուք
-			%tr
-				%th	Acc.
-				%td	մեզ
-				%td ձեզ
-			%tr
-				%th Gen.
-				%td մեր
-				%td ձեր
-			%tr
-				%th	Dat.
-				%td	մեզ
-				%td ձեզ
-			%tr
-				%th	Loc.
-				%td	մեզ
-				%td ձեզ
-			%tr
-				%th	Abl.
-				%td	մենջ, մեզեն
-				%td ձենջ, ձեզեն
-			%tr
-				%th	Instr.
-				%td	մեւք
-				%td ձեւք
+			%li
+				%a{:href=>"#misc"} Credit, About, Resources
+		#legend
+			%h4 Legend
+			%table
+				%tr
+					%th	Nom.
+					%td	Nomative
+					%td	Ուղական
+				%tr
+					%th Acc.
+					%td Accusative
+				%tr
+					%th Gen.
+					%td Genitive
+				%tr
+					%th Dat.
+					%td Dative
+				%tr
+					%th Loc.
+					%td Locative
+				%tr
+					%th Abl.
+					%td Ablative
+				%tr
+					%th Instr
+					%td Instrumental 
+	#sections.grid_8.pull_4
+		.item
+			%a{:name=>"noun_cases"}
+			%h2 Noun Cases
+			%table
+				%tr.top
+					%th
+						%em Singular
+					%th	year
+					%th	word
+					%th	sea
+					%th	mouth
+				%tr
+					%th	Nom.
+					%td	ամ
+					%td բան
+					%td ծով
+					%td բերան
+				%tr
+					%th	Acc.
+					%td	ամ
+					%td բան
+					%td ծով
+					%td բերան
+				%tr
+					%th	Gen.
+					%td	ամի
+					%td բանի
+					%td ծովու
+					%td բերանոյ
+				%tr
+					%th	Dat.
+					%td	ամի
+					%td բանի
+					%td ծովու
+					%td բերանոյ
+				%tr
+					%th	Loc.
+					%td	ամի
+					%td բանի
+					%td ծովու
+					%td բերան
+				%tr
+					%th	Abl.
+					%td	ամէ
+					%td բանէ
+					%td ծովէ
+					%td բերանոյ
+				%tr
+					%th	Instr.
+					%td	ամաւ
+					%td բանիւ
+					%td ծովու
+					%td բերանով
+			%table
+				%tr.top
+					%th
+						%em Plural
+					%th	year
+					%th	word
+					%th	sea
+					%th	mouth
+				%tr
+					%th	Nom.
+					%td	ամք
+					%td բանք
+					%td ծովք
+					%td բերանք
+				%tr
+					%th	Acc.
+					%td	ամս
+					%td բանս
+					%td ծովս
+					%td բերանս
+				%tr
+					%th	Gen.
+					%td	ամաց
+					%td բանից
+					%td ծովուց
+					%td բերանոց
+				%tr
+					%th	Dat.
+					%td	ամաց
+					%td բանից
+					%td ծովուց
+					%td բերանոց
+				%tr
+					%th	Loc.
+					%td	ամս
+					%td բանս
+					%td ծովս
+					%td բերանս
+				%tr
+					%th	Abl.
+					%td	ամաց
+					%td բանից
+					%td ծովից
+					%td բերանոց
+				%tr
+					%th	Instr.
+					%td	ամաւք
+					%td բանիւք
+					%td ծովուք
+					%td բերանովք
+		.item
+			%a{:name=>"pronouns"}
+			%h2 Pronouns
+			.grid_4.push_4.alpha
+				:markdown
+					**Note:** The declension of այս, այդ; սա, դա; սոյն, դոյն follows exactly the same pattern as __այն__ and __նա__.
+			.grid_4.pull_4.omega
+				%table
+					%tr.top
+						%th
+							%em Singular
+					%tr
+						%th	Nom.
+						%td	այն
+						%td 
+						%td նա
+						%td նոյն
+					%tr
+						%th	Acc.
+						%td	այն
+						%td 
+						%td նա
+						%td նոյն
+					%tr
+						%th	Gen.
+						%td	այնր
+						%td այնորիկ
+						%td նորին
+						%td նորին,նորուն
+					%tr
+						%th	Dat.
+						%td	այնմ
+						%td այնմիկ
+						%td նմա
+						%td նմին
+					%tr
+						%th	Loc.
+						%td	այնմ
+						%td այնմիկ
+						%td նմա
+						%td նմին
+					%tr
+						%th	Abl.
+						%td	այնմ
+						%td այնմանէ
+						%td նմանէ
+						%td նմին
+					%tr
+						%th	Instr.
+						%td	այն
+						%td այնուիկ
+						%td նովաւ
+						%td նովին,նովիմբ
+			.clear
+			%table
+				%tr.top
+					%th
+						%em Plural
+				%tr
+					%th	Nom.
+					%td	այնք
+					%td այնոքիկ
+					%td նոքա
+					%td նոքին,նոյնք
+				%tr
+					%th	Acc.
+					%td	այնս
+					%td այնոսիկ
+					%td նոսա
+					%td նոսին, նոյնս
+				%tr
+					%th	Gen.
+					%td	այնց
+					%td այնոցիկ
+					%td նոցա
+					%td նոցին, նոցունց
+				%tr
+					%th	Dat.
+					%td	այնց
+					%td այնոցիկ
+					%td նոցա
+					%td նոցին, նոցունց
+				%tr
+					%th	Loc.
+					%td	այնս
+					%td այնոսիկ
+					%td նոսա
+					%td նոսին, նոյնս
+				%tr
+					%th	Abl.
+					%td	այնց, այնցանէ
+					%td այնոցիկ
+					%td նոցա, նոցանէ
+					%td նոցին, նոցունց
+				%tr
+					%th	Instr.
+					%td	այնուք
+					%td այնոքիւք
+					%td նոքաւք
+					%td նոքիմբք, նոքումբք
+			%h3 Personal Pronouns
+			%table.grid_3.alpha
+				%tr.top
+					%th
+						%em Singular
+				%tr
+					%th	Nom.
+					%td	ես
+					%td դու
+				%tr
+					%th	Acc.
+					%td	իս
+					%td իմ
+				%tr
+					%th Gen.
+					%td իմ
+					%td քո
+				%tr
+					%th	Dat.
+					%td	ինձ
+					%td քեզ
+				%tr
+					%th	Loc.
+					%td	իս
+					%td քեզ
+				%tr
+					%th	Abl.
+					%td	ինէն
+					%td ինձէն
+				%tr
+					%th	Instr.
+					%td	ինեւ
+					%td քեւ
+			%table.grid_3.omega
+				%tr.top
+					%th
+						%em Plural
+				%tr
+					%th	Nom.
+					%td	մեք
+					%td դուք
+				%tr
+					%th	Acc.
+					%td	մեզ
+					%td ձեզ
+				%tr
+					%th Gen.
+					%td մեր
+					%td ձեր
+				%tr
+					%th	Dat.
+					%td	մեզ
+					%td ձեզ
+				%tr
+					%th	Loc.
+					%td	մեզ
+					%td ձեզ
+				%tr
+					%th	Abl.
+					%td	մենջ, մեզեն
+					%td ձենջ, ձեզեն
+				%tr
+					%th	Instr.
+					%td	մեւք
+					%td ձեւք
+			.clear
+			%a{:name=>"reflexive_intensive_pronouns"}
+			%h3 Reflexive and Intensive Pronouns
+			%table.grid_3.alpha
+				%tr.top
+					%th
+					%th Singular
+					%th Plural
+				%tr
+					%th Nom.
+					%td &mdash;
+					%td &mdash;
+				%tr
+					%th Acc.
+					%td &mdash;
+					%td Իւրեանս
+				%tr
+					%th Gen.
+					%td Իւր
+					%td Իւրեանց
+				%tr
+					%th Dat.
+					%td Իւր
+					%td Իւրեանց
+				%tr
+					%th Loc.
+					%td Իւր
+					%td իւրեանս
+				%tr
+					%th Abl.
+					%td իւրմէ
+					%td իւրեանց
+				%tr
+					%th Instr.
+					%td իւրեւ, իւրեաւ, իւրեամբք
+					%td իւրեմբք
+			%table.grid_3.omega
+				%tr.top
+					%th
+					%th Singular
+					%th Plural
+				%tr
+					%th Nom.
+					%td ինքն
+					%td ինքեանք
+				%tr
+					%th Acc.
+					%td ինքն
+					%td ինքեանս
+				%tr
+					%th Gen.
+					%td ինքեան
+					%td ինքեանց
+				%tr
+					%th Dat.
+					%td ինքեան
+					%td ինքեանց
+				%tr
+					%th Loc.
+					%td ինքեան
+					%td ինքեանս
+				%tr
+					%th Abl.
+					%td ինքենէ
+					%td ինքեանց
+				%tr
+					%th Instr.
+					%td ինքեամբ
+					%td ինքեամբք
+			.clear
+			%a{:name=>"possessive_pronouns"}
+			%h3 Possessive Pronouns
+			%table.grid_4.alpha
+				%tr.top
+					%th Singular
+					%th My
+					%th Your
+					%th His, Her (reflexive)
+				%tr
+					%th Nom.
+					%td իմ
+					%td քո
+					%td իւր
+				%tr
+					%th Acc.
+					%td իմ
+					%td քո
+					%td իւր
+				%tr
+					%th Gen.
+					%td իմոյ
+					%td քոյոյ, քոյ
+					%td իրոյ
+				%tr
+					%th Dat.
+					%td իմում
+					%td քում
+					%td իւրում
+				%tr
+					%th Loc.
+					%td իմում
+					%td քում
+					%td իւրում
+				%tr
+					%th Abl.
+					%td իմմէ
+					%td քումէ
+					%td իւրմէ
+				%tr
+					%th Instr.
+					%td իմով
+					%td քոյով
+					%td իւրով
+			%table.grid_4.omega
+				%tr.top
+					%th Plural
+					%th My
+					%th Your
+					%th His, Her (reflexive)
+				%tr
+					%th Nom.
+					%td իմբ
+					%td քոյք
+					%td իւր
+				%tr
+					%th Acc.
+					%td իմս
+					%td քոյս
+					%td իւր
+				%tr
+					%th Gen.
+					%td իմոց
+					%td քոյոց, քոց
+					%td իրոց
+				%tr
+					%th Dat.
+					%td իմոց
+					%td քուոց
+					%td իւրոց
+				%tr
+					%th Loc.
+					%td իմո
+					%td քոյս
+					%td իւրում
+				%tr
+					%th Abl.
+					%td իմոց
+					%td քոյոց
+					%td իւրոց
+				%tr
+					%th Instr.
+					%td իմովք
+					%td քոյովք
+					%td իւրովք
+			.clear
+			%table
+				%tr.top
+					%th 
+					%th Our
+					%th Your (pl.)
+					%th Their
+				%tr
+					%th Nom.
+					%td մեր
+					%td ձեր
+					%td [իւրեանց]
+				%tr
+					%th Acc.
+					%td մեր
+					%td ձեր
+					%td 
+				%tr
+					%th Gen.
+					%td մերոյ
+					%td ձերոյ
+					%td 
+				%tr
+					%th Dat.
+					%td մերում
+					%td ձերում
+					%td 
+				%tr
+					%th Loc.
+					%td մերում
+					%td ձերում
+					%td 
+				%tr
+					%th Abl.
+					%td մերմէ
+					%td ձերմէ
+					%td 
+				%tr
+					%th Instr.
+					%td մերով
+					%td ձերով
+					%td 
 		.clear
-		%a{:name=>"reflexive_intensive_pronouns"}
-		%h3 Reflexive and Intensive Pronouns
-		%table.grid_3.alpha
-			%tr.top
-				%th
-				%th Singular
-				%th Plural
-			%tr
-				%th Nom.
-				%td &mdash;
-				%td &mdash;
-			%tr
-				%th Acc.
-				%td &mdash;
-				%td Իւրեանս
-			%tr
-				%th Gen.
-				%td Իւր
-				%td Իւրեանց
-			%tr
-				%th Dat.
-				%td Իւր
-				%td Իւրեանց
-			%tr
-				%th Loc.
-				%td Իւր
-				%td իւրեանս
-			%tr
-				%th Abl.
-				%td իւրմէ
-				%td իւրեանց
-			%tr
-				%th Instr.
-				%td իւրեւ, իւրեաւ, իւրեամբք
-				%td իւրեմբք
-		%table.grid_3.omega
-			%tr.top
-				%th
-				%th Singular
-				%th Plural
-			%tr
-				%th Nom.
-				%td ինքն
-				%td ինքեանք
-			%tr
-				%th Acc.
-				%td ինքն
-				%td ինքեանս
-			%tr
-				%th Gen.
-				%td ինքեան
-				%td ինքեանց
-			%tr
-				%th Dat.
-				%td ինքեան
-				%td ինքեանց
-			%tr
-				%th Loc.
-				%td ինքեան
-				%td ինքեանս
-			%tr
-				%th Abl.
-				%td ինքենէ
-				%td ինքեանց
-			%tr
-				%th Instr.
-				%td ինքեամբ
-				%td ինքեամբք
+		.item
+			%a{:name=>"prepositions"}
+			%h2 Prepositions
+			%table.prepositions
+				%tr
+					%th{:rowspan=>"3"} առ
+					%td.plus +
+					%td Acc
+					%td to, towards (with verbs of motion toward a person)
+				%tr
+					%td.plus +
+					%td Loc
+					%td beside, "chez"
+				%tr
+					%td.plus +
+					%td Instr
+					%td.last beside, in the time of (+ the name of some person), in addition to
+				%tr
+					%th{:rowspan=>"4"} ընդ
+					%td.plus +
+					%td Acc
+					%td though, along, by way of, against, during
+				%tr
+					%td.plus +
+					%td Gen
+					%td instead of, in exchange for
+				%tr
+					%td.plus +
+					%td Loc
+					%td with, in the company of
+				%tr
+					%td.plus +
+					%td Instr
+					%td.last under
+				%tr
+					%th{:rowspan=>"3"} ըստ
+					%td.plus +
+					%td Acc
+					%td on, onto
+				%tr
+					%td.plus +
+					%td Dat, Loc
+					%td according to
+				%tr
+					%td.plus +
+					%td Abl
+					%td.last one after the another (e.g. year by year)
+				%tr
+					%th{:rowspan=>"3"} զ
+					%td.plus +
+					%td Acc
+					%td (sign of the definite object); indicates duration of time
+				%tr
+					%td.plus +
+					%td Abl
+					%td concerning
+				%tr
+					%td.plus +
+					%td Instr.
+					%td.last around, about
+				%tr
+					%th{:rowspan=>"3"} ի/յ
+					%td.plus +
+					%td Acc
+					%td to, into
+				%tr
+					%td.plus +
+					%td Loc
+					%td in
+				%tr
+					%td.plus +
+					%td Abl
+					%td out of, away from; also used in a partitive sense, and for the actor in a passive sentence.
+				%tr
+					%th ց
+					%td.plus +
+					%td Acc
+					%td to, up to; also very frequently in the sense of speaking "to" a person instead of a dative case
 		.clear
-		%a{:name=>"possessive_pronouns"}
-		%h3 Possessive Pronouns
-		%table.grid_4.alpha
-			%tr.top
-				%th Singular
-				%th My
-				%th Your
-				%th His, Her (reflexive)
-			%tr
-				%th Nom.
-				%td իմ
-				%td քո
-				%td իւր
-			%tr
-				%th Acc.
-				%td իմ
-				%td քո
-				%td իւր
-			%tr
-				%th Gen.
-				%td իմոյ
-				%td քոյոյ, քոյ
-				%td իրոյ
-			%tr
-				%th Dat.
-				%td իմում
-				%td քում
-				%td իւրում
-			%tr
-				%th Loc.
-				%td իմում
-				%td քում
-				%td իւրում
-			%tr
-				%th Abl.
-				%td իմմէ
-				%td քումէ
-				%td իւրմէ
-			%tr
-				%th Instr.
-				%td իմով
-				%td քոյով
-				%td իւրով
-		%table.grid_4.omega
-			%tr.top
-				%th Plural
-				%th My
-				%th Your
-				%th His, Her (reflexive)
-			%tr
-				%th Nom.
-				%td իմբ
-				%td քոյք
-				%td իւր
-			%tr
-				%th Acc.
-				%td իմս
-				%td քոյս
-				%td իւր
-			%tr
-				%th Gen.
-				%td իմոց
-				%td քոյոց, քոց
-				%td իրոց
-			%tr
-				%th Dat.
-				%td իմոց
-				%td քուոց
-				%td իւրոց
-			%tr
-				%th Loc.
-				%td իմո
-				%td քոյս
-				%td իւրում
-			%tr
-				%th Abl.
-				%td իմոց
-				%td քոյոց
-				%td իւրոց
-			%tr
-				%th Instr.
-				%td իմովք
-				%td քոյովք
-				%td իւրովք
-		%table
-			%tr.top
-				%th 
-				%th Our
-				%th Your (pl.)
-				%th Their
-			%tr
-				%th Nom.
-				%td մեր
-				%td ձեր
-				%td [իւրեանց]
-			%tr
-				%th Acc.
-				%td մեր
-				%td ձեր
-				%td 
-			%tr
-				%th Gen.
-				%td մերոյ
-				%td ձերոյ
-				%td 
-			%tr
-				%th Dat.
-				%td մերում
-				%td ձերում
-				%td 
-			%tr
-				%th Loc.
-				%td մերում
-				%td ձերում
-				%td 
-			%tr
-				%th Abl.
-				%td մերմէ
-				%td ձերմէ
-				%td 
-			%tr
-				%th Instr.
-				%td մերով
-				%td ձերով
-				%td 
-	.clear
-	.item.grid_8
-		%a{:name=>"prepositions"}
-		%h2 Prepositions
-		%table.prepositions
-			%tr
-				%th{:rowspan=>"3"} առ
-				%td.plus +
-				%td Acc
-				%td to, towards (with verbs of motion toward a person)
-			%tr
-				%td.plus +
-				%td Loc
-				%td beside, "chez"
-			%tr
-				%td.plus +
-				%td Instr
-				%td.last beside, in the time of (+ the name of some person), in addition to
-			%tr
-				%th{:rowspan=>"4"} ընդ
-				%td.plus +
-				%td Acc
-				%td though, along, by way of, against, during
-			%tr
-				%td.plus +
-				%td Gen
-				%td instead of, in exchange for
-			%tr
-				%td.plus +
-				%td Loc
-				%td with, in the company of
-			%tr
-				%td.plus +
-				%td Instr
-				%td.last under
-			%tr
-				%th{:rowspan=>"3"} ըստ
-				%td.plus +
-				%td Acc
-				%td on, onto
-			%tr
-				%td.plus +
-				%td Dat, Loc
-				%td according to
-			%tr
-				%td.plus +
-				%td Abl
-				%td.last one after the another (e.g. year by year)
-			%tr
-				%th{:rowspan=>"3"} զ
-				%td.plus +
-				%td Acc
-				%td (sign of the definite object); indicates duration of time
-			%tr
-				%td.plus +
-				%td Abl
-				%td concerning
-			%tr
-				%td.plus +
-				%td Instr.
-				%td.last around, about
-			%tr
-				%th{:rowspan=>"3"} ի/յ
-				%td.plus +
-				%td Acc
-				%td to, into
-			%tr
-				%td.plus +
-				%td Loc
-				%td in
-			%tr
-				%td.plus +
-				%td Abl
-				%td out of, away from; also used in a partitive sense, and for the actor in a passive sentence.
-			%tr
-				%th ց
-				%td.plus +
-				%td Acc
-				%td to, up to; also very frequently in the sense of speaking "to" a person instead of a dative case
-	.clear
-	.item.grid_8
-		%a{:name=>"verbs"}
-		%h2 Verbs
-		%a{:name=>"present"}
-		%h3 Present Indicative
-		%table.grid_4.alpha
-			%tr.top
-				%th singular
-				%th love
-				%th being loved
-				%th weep
-				%th pour
-				%th exist
-			%tr
-				%th I
-				%td սիրեմ
-				%td սիրԻմ
-				%td լամ
-				%td հեղում
-				%td գոմ
-			%tr
-				%th You
-				%td սիրես
-				%td սիրիս
-				%td լաս
-				%td հեղուս
-				%td (գոս)
-			%tr
-				%th He,She,It
-				%td սիրէ
-				%td սիրի
-				%td լայ
-				%td հեղու
-				%td գոյ
-		%table.grid_4.omega
-			%tr.top
-				%th singular
-				%th love
-				%th being loved
-				%th weep
-				%th pour
-				%th exist
-			%tr
-				%th We
-				%td սիրեմք
-				%td սիրԻմք
-				%td լամք
-				%td հեղումք
-				%td (գոմք)
-			%tr
-				%th You All
-				%td սիրեք
-				%td սիրիք
-				%td լայք
-				%td հեղուք
-				%td գոյք
-			%tr
-				%th They
-				%td սիրեն
-				%td սիրին
-				%td լան
-				%td հեղուն
-				%td գոն
+		.item
+			%a{:name=>"verbs"}
+			%h2 Verbs
+			%a{:name=>"present"}
+			%h3 Present Indicative
+			%table.grid_4.alpha
+				%tr.top
+					%th singular
+					%th love
+					%th being loved
+					%th weep
+					%th pour
+					%th exist
+				%tr
+					%th I
+					%td սիրեմ
+					%td սիրԻմ
+					%td լամ
+					%td հեղում
+					%td գոմ
+				%tr
+					%th You
+					%td սիրես
+					%td սիրիս
+					%td լաս
+					%td հեղուս
+					%td (գոս)
+				%tr
+					%th He,She,It
+					%td սիրէ
+					%td սիրի
+					%td լայ
+					%td հեղու
+					%td գոյ
+			%table.grid_4.omega
+				%tr.top
+					%th singular
+					%th love
+					%th being loved
+					%th weep
+					%th pour
+					%th exist
+				%tr
+					%th We
+					%td սիրեմք
+					%td սիրԻմք
+					%td լամք
+					%td հեղումք
+					%td (գոմք)
+				%tr
+					%th You All
+					%td սիրեք
+					%td սիրիք
+					%td լայք
+					%td հեղուք
+					%td գոյք
+				%tr
+					%th They
+					%td սիրեն
+					%td սիրին
+					%td լան
+					%td հեղուն
+					%td գոն
 		
-		%h3 Imperfect
+			%h3 Imperfect
 		
-		%h3 Present Subjunctive
+			%h3 Present Subjunctive
 		
-		%a{:name=>"past"}
-		%h3 Past Participle
+			%a{:name=>"past"}
+			%h3 Past Participle
 
-		%a{:name=>"future"} 
-		%h3 Aorist
+			%a{:name=>"future"} 
+			%h3 Aorist
 
-		%h3 Aorist Subjunctive
+			%h3 Aorist Subjunctive
+		.clear
+		.item
+			%a{:name=>"glossary"}
+			%h2 Glossary
+			%p Lorem ipsum...
+		.clear
 	.clear
-	.item.grid_8
-		%a{:name=>"glossary"}
-		%h2 Glossary
-		%p Lorem ipsum...
-	.clear
+%a{:name=>"misc"}
 #footer.container_12
 	.grid_12
 		.grid_4.alpha
