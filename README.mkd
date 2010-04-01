@@ -1,0 +1,31 @@
+The Grabar Cheatsheet
+=====================
+
+An Online Cheatsheet for the study of Classical Armenian, otherwise known as Grabar or Գրաբար in Armenian.
+
+The purpose of this one-page website is to distill basic Classical Armenian grammatical forms into a simple to navigate reference work. This will be useful for students, scholars, or clergy who study or use Classical Armenian.
+
+_Note:_ If you're unfamiliar with the modern connotation of the term "Cheatsheet", it does not refer to [a tool for cheating][1], but a very [abbreviated reference material][2].
+
+Technical Information
+---------------------
+
+This website utilizing the rapid mockup framework [Mercury][3], which uses [HAML][4], [SASS][5], [CoffeeScript][6], and [960.gs][7] to speed up development time (and make the work more fun). It also makes hosting on [Heroku][8] easy.
+
+Collaboration
+-------------
+
+Collaboration is welcome. If the acronyms that are mentioned in the previous section aren't frightening to you, please fork the repository and make which ever changes you like, then send me a pull request.
+
+Suggestions about what should added, removed, or modified are welcome. Please submit them in the [Issues][9] section of [my Github repsitory][10].
+
+[1]: http://www.wikihow.com/Cheat-Using-a-Cheat-Sheet
+[2]: http://en.wikipedia.org/wiki/Cheat_sheet#As_reference_cards
+[3]: http://mercury.heroku.com
+[4]: http://haml-lang.com/
+[5]: http://sass-lang.com/
+[6]: http://jashkenas.github.com/coffee-script/
+[7]: http://960.gs
+[8]: http://heroku.com
+[9]: http://github.com/mattash/The-Grabar-Cheatsheet/issues
+[10]: http://github.com/mattash/The-Grabar-Cheatsheet
