@@ -9,6 +9,5 @@
 			%link{ :href => "/stylesheets/#{css}.css", :rel => "stylesheet", :type => "text/css", :media => "screen", :charset => "utf-8" }
 		- ['jquery-1.4.2.min', 'jquery-ui-1.8.custom.min', 'coffee-script'].each do |js|
 			%script{:src => "/javascripts/#{js}.js", :type => 'text/javascript'}
-		%script{:src=>"http://s3.amazonaws.com/grabarcs.com/jquery.dimensions.min.js", :type => 'text/javascript'}
 	%body
 		= yield
