@@ -18,7 +18,7 @@ Collaboration
 -------------
 Collaboration is welcome. If the acronyms that are mentioned in the previous section aren't frightening to you, please fork the repository and make which ever changes you like, then send me a pull request.
 
-Suggestions about what should added, removed, or modified are welcome. Please submit them in the [Issues][9] section of [my Github repsitory][10].
+Suggestions about what should be added, removed, or modified are welcome. Please submit them in the [Issues][9] section of [my Github repsitory][10].
 
 Credits
 -------
