@@ -9,15 +9,24 @@ _Note:_ If you're unfamiliar with the modern connotation of the term "Cheatsheet
 
 Technical Information
 ---------------------
-
 This website utilizing the rapid mockup framework [Mercury][3], which uses [HAML][4], [SASS][5], [CoffeeScript][6], and [960.gs][7] to speed up development time (and make the work more fun). It also makes hosting on [Heroku][8] easy.
+
+### In The Works
+The site is still in active development. Eventually an all Armenian version, as well as a mobile version will be made available.
 
 Collaboration
 -------------
-
 Collaboration is welcome. If the acronyms that are mentioned in the previous section aren't frightening to you, please fork the repository and make which ever changes you like, then send me a pull request.
 
 Suggestions about what should added, removed, or modified are welcome. Please submit them in the [Issues][9] section of [my Github repsitory][10].
+
+Credits
+-------
+Credit goes to [Ara Soghomonian][11] for compiling the initial material for the Cheatsheet. The primary source for the content is [Robert Thomson's Introduction to Classical Armenian][12].
+
+Copyright
+---------
+Copyright © 2010 Matthew Ash. See LICENSE for details.
 
 [1]: http://www.wikihow.com/Cheat-Using-a-Cheat-Sheet
 [2]: http://en.wikipedia.org/wiki/Cheat_sheet#As_reference_cards
@@ -29,3 +38,5 @@ Suggestions about what should added, removed, or modified are welcome. Please su
 [8]: http://heroku.com
 [9]: http://github.com/mattash/The-Grabar-Cheatsheet/issues
 [10]: http://github.com/mattash/The-Grabar-Cheatsheet
+[11]: http://www.facebook.com/Rookie
+[12]: http://www.amazon.com/Introduction-Classical-Armenian-Robert-Thomson/dp/0882060724
