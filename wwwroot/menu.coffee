@@ -1,7 +1,14 @@
-name: "#TOC"
-menuYloc: parseInt($(name).css("top").substring(0,$(name).css("top").indexOf("px")))
 $(window).scroll =>
+	menu: $("#TOC")
+	content: $("#content")
 	st: $(document).scrollTop()
-	scrolltop: if st >= 77 then st - 77 else st
-	offset: menuYloc+scrolltop+"px"
-	$(name).animate({top:offset},{duration:500,queue:false})
+	contentTop: content.offset().top
+	scrollTop: if st >= contentTop then st - contentTop else st
+		
+	move: (offset) -> menu.animate({top:offset+"px"},{duration:500,queue:false})
+	
+	if scrollTop+menu.outerHeight() < content.innerHeight()
+		move(scrollTop)
+	else
+		adjustedScrollTop: scrollTop-(scrollTop+menu.outerHeight()-content.innerHeight())
+		move(adjustedScrollTop)
