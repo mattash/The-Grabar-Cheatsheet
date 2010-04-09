@@ -2,9 +2,6 @@
 = coffee :menu
 #header.container_12
 	.grid_12
-		%em.notice 
-			%img{:src=>"http://s3.amazonaws.com/grabarcs.com/get_info.png"}
-			This site is currently in active development.
 		%h1 The Գրաբար Cheatsheet
 	.clear
 #content.container_12
@@ -31,8 +28,6 @@
 						%a{:href=>"#past"} Past
 					%li
 						%a{:href=>"#future"} Future
-			%li
-				%a{:href=>"#glossary"} Glossary
 			%li
 				%a{:href=>"#misc"} Credit, About, Resources
 		#legend
@@ -727,7 +722,7 @@
 					%td գոյ
 			%table.grid_4.omega
 				%tr.top
-					%th singular
+					%th Plural
 					%th love
 					%th being loved
 					%th weep
@@ -754,23 +749,183 @@
 					%td լան
 					%td հեղուն
 					%td գոն
-		
-			%h3 Imperfect
-		
+
 			%h3 Present Subjunctive
-		
+			%table
+				%tr
+					%td (սիրե + ից-եմ) սիրիցեմ
+				%tr
+					%td (սիրի + ից-իմ) սիրիցիմ
+
 			%a{:name=>"past"}
+			%h3 Imperfect
+			%table.grid_4.alpha
+				%tr.top
+					%th singular
+					%th love
+					%th being loved
+					%th weep
+					%th pour
+					%th exist
+				%tr
+					%th I
+					%td սիրեի
+					%td սիրեի
+					%td լայի
+					%td հեղուի
+					%td -
+				%tr
+					%th You
+					%td սիրեիր
+					%td սիրեիր
+					%td լայիր
+					%td հեղուիր
+					%td -
+				%tr
+					%th He,She,It
+					%td սիրէր
+					%td սիրէր
+					%td լայր
+					%td հեղույր
+					%td գոյր
+			%table.grid_4.omega
+				%tr.top
+					%th Plural
+					%th love
+					%th being loved
+					%th weep
+					%th pour
+					%th exist
+				%tr
+					%th We
+					%td սիրեաք
+					%td սիրեաք
+					%td լայաք
+					%td հեղուաք
+					%td -
+				%tr
+					%th You All
+					%td սիրեաք
+					%td սիրրաք
+					%td լայիք
+					%td հեղուիք
+					%td -
+				%tr
+					%th They
+					%td սիրեին
+					%td սիրեին
+					%td լային
+					%td հեղուին
+					%td գոյին
+
 			%h3 Past Participle
+			%table
+				%tr
+					%td ասացեալ
+					%td said, having spoken
+				%tr
+					%td մեռեալ
+					%td dead
+				%tr
+					%td բերեալ
+					%td carried, having carried
 
 			%a{:name=>"future"} 
 			%h3 Aorist
-
+			%table{:class=>"tree"}
+				%tr
+					%th{:colspan => 2} Active
+					%th{:colspan => 2} Passive
+				%tr
+					%th Singular
+					%th Plural
+					%th Singular
+					%th Plural
+				%tr{:class=>"center"}
+					%td ի
+					%td աք
+					%td այ
+					%td աք
+				%tr{:class=>"center"}
+					%td եր
+					%td էք or իք
+					%td ար
+					%td այք
+				%tr{:class=>"center"}
+					%td -
+					%td ին
+					%td աւ
+					%td ան
+				%tr
+					%th{:colspan => 4} Examples 1. Սիրել
+				%tr
+					%td սիրեցի
+					%td սիրեցաք
+					%td սիրեցայ
+					%td սիրեցաք
+				%tr
+					%td սիրեցեր
+					%td սիրեցէք
+					%td սիրեցար
+					%td սիրեցան
+				%tr
+					%td սիրեաց
+					%td սիրեցին
+					%td սիրեցաւ
+					%td սիրեցան
+					%tr
+				%tr
+					%th{:colspan => 4} Examples 2. Բերել
+				%tr
+					%td բերի
+					%td բերաք
+					%td բերայ
+					%td բերաք
+				%tr
+					%td սերեր
+					%td բերէք (or բերիք)
+					%td բերար
+					%td բերայք
+				%tr
+					%td եբեր
+					%td բերին
+					%td բերաւ
+					%td բերան
+						
 			%h3 Aorist Subjunctive
-		.clear
-		.item
-			%a{:name=>"glossary"}
-			%h2 Glossary
-			%p Lorem ipsum...
+			%table{:class=>"tree"}
+				%tr
+					%th{:colspan => 2} Active
+					%th Middle/Passive
+				%tr
+					%th Singular
+				%tr
+					%td{:class=>"center"} 1
+					%td սիրեցից (բերից)
+					%td սիրեցայց (բերայց)
+				%tr
+					%td{:class=>"center"} 2
+					%td սիրեսցես (բերցես)
+					%td սիրեսցիս (բերցիս)
+				%tr
+					%td{:class=>"center"} 3
+					%td սիրեսցէ (բերցէ)
+					%td սիրեսցի (բերցի)
+				%tr
+					%th Plural
+				%tr
+					%td{:class=>"center"} 1
+					%td սիրեսցուք (բերցուք)
+					%td սիրեսցուք (բերցուք)
+				%tr
+					%td{:class=>"center"} 2
+					%td սիրեսջիք (բերջիք)
+					%td սիրեսջիք (բերջիք)
+				%tr
+					%td{:class=>"center"} 3
+					%td սիրեսցեն (բերցեն)
+					%td սիրեսցին (բերցին)
+
 		.clear
 	.clear
 %a{:name=>"misc"}

@@ -1,3 +1,14 @@
+=gradient(!type, !coords, !color_start, !color_end, !color_stop = false)
+	!gradient= "#{!coords}, from(#{!color_start}), to(#{!color_end})"
+	@if !color_stop
+		!gradient= !gradient + ", " + !color_stop
+	background: -webkit-gradient(#{!type}, #{!gradient})
+	background: -moz-#{!type}-gradient(#{!gradient})
+
+=linear-gradient(!start, !end, !color1, !color2, !color_stop = false)
+	!coords = !start + ", " + !end
+	+gradient("linear", !coords, !color1, !color2, !color_stop)
+
 body
 	:background-color #666
 	:color #EEE
@@ -12,6 +23,7 @@ a
 		:color #fefefe
 #header
 	:background-color #333
+	+linear-gradient("center bottom","center top","#333","#515151")
 	:padding-top 1em
 	:text-shadow #000 1px 1px 0px
 	:margin-bottom 1.5em
@@ -22,7 +34,7 @@ a
 	:-moz-box-shadow #111 1px 1px 0px
 	:-webkit-box-shadow #111 1px 1px 0px
 	:box-shadow #111 1px 1px 0px
-	:border-bottom #454545 1px solid
+	:border-bottom #555 1px solid
 	.notice
 		:text-align center
 		:top 0
@@ -62,6 +74,14 @@ table
 		:background #444
 		:padding 0px 5px
 		:text-shadow #222 1px 1px 0px
+		:-moz-border-radius .15em
+		:-webkit-border-radius .15em
+		:-moz-box-shadow #111 1px 1px 0px
+		:-webkit-box-shadow #111 1px 1px 0px
+		:box-shadow #111 1px 1px 0px
+		:border-bottom #555 1px solid
+		+linear-gradient("center bottom","center top","#444","#555")
+		
 	h3
 		:color #ADD8C7
 	table.prepositions
@@ -77,6 +97,9 @@ table
 			:font-style italic
 		td.last
 			:padding-bottom 20px
+	table.tree
+		th, tr.center td, td.center
+			:text-align center
 #footer
 	:background #CDD7B6
 	:-moz-border-radius-topright .5em
