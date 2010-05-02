@@ -10,9 +10,9 @@
 	+gradient("linear", !coords, !color1, !color2, !color_stop)
 
 body
-	:background-color #666
+	:background #666 url(/bg.png) repeat
 	:color #EEE
-	:text-shadow #555 1px 1px 0px
+	:text-shadow rgba(0,0,0,0.5) 1px 1px 0px
 	:font-family 'Helvetica Neue',Arial,'Arian AMU','Liberation Sans',FreeSans,sans-serif
 a
 	:color #69D2E7
@@ -25,7 +25,7 @@ a
 	:background-color #333
 	+linear-gradient("center bottom","center top","#333","#515151")
 	:padding-top 1em
-	:text-shadow #000 1px 1px 0px
+	:text-shadow rgba(0,0,0,0.75) 1px 1px 0px
 	:margin-bottom 1.5em
 	:-moz-border-radius-bottomright .5em
 	:-webkit-border-bottom-right-radius .5em
@@ -35,6 +35,15 @@ a
 	:-webkit-box-shadow #111 1px 1px 0px
 	:box-shadow #111 1px 1px 0px
 	:border-bottom #555 1px solid
+	h1, div.subtitle
+		:display inline-block
+		:margin-right .5em
+		:zoom 1
+	div.subtitle
+		:color #ddd
+		:font-size 1.2em
+		:font-weight 200
+		//:letter-spacing -1px
 	.notice
 		:text-align center
 		:top 0
