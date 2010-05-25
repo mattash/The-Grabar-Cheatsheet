@@ -13,7 +13,7 @@ body
 	:background #666 url(/bg.png) repeat
 	:color #EEE
 	:text-shadow rgba(0,0,0,0.5) 1px 1px 0px
-	:font-family 'Helvetica Neue',Arial,'Arian AMU','Liberation Sans',FreeSans,sans-serif
+	:font-family 'Helvetica Neue',Arial,'Liberation Sans',FreeSans,sans-serif
 a
 	:color #69D2E7
 	:text-decoration none
@@ -78,6 +78,8 @@ table
 		:text-align right
 	th,td
 		:padding-right 5px
+	td
+		:font-family 'ArianAMU',Sylfaen,'Arial Unicode',sans-serif
 .item 
 	h2
 		:background #444
@@ -126,9 +128,9 @@ table
 	a
 		:color #66775C
 		:font-weight bold
-		%:hover
+		&:hover
 			:color #48A09B
-		%:active
+		&:active
 			:color #B1D1D3
 	.copyright
 		:border-top 1px dotted #666
