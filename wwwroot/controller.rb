@@ -1,1 +1,0 @@
-layout 'layout.html.haml'
