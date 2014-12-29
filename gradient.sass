@@ -19,10 +19,10 @@
 
 =linear-gradient(!start, !end, !color1, !color2, !color_stop = false)
   !coords = !start + ", " + !end
-	background-image: -moz-linear-gradient(!start, !color1, !color2); /* FF3.6 */
-	background-image: -webkit-gradient(linear,!start,!end,color-stop(0, !color1),color-stop(1, !color2)); /* Saf4+, Chrome */
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='!color1', EndColorStr='!color2'); /* IE6,IE7 */
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='!color1', EndColorStr='!color2')"; /* IE8 */
+    background-image: -moz-linear-gradient(!start, !color1, !color2); /* FF3.6 */
+    background-image: -webkit-gradient(linear,!start,!end,color-stop(0, !color1),color-stop(1, !color2)); /* Saf4+, Chrome */
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='!color1', EndColorStr='!color2'); /* IE6,IE7 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='!color1', EndColorStr='!color2')"; /* IE8 */
 
 //*
   // This yields a gradient starting at the top with #fff, ending in #aaa

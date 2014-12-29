@@ -1,3 +1,9 @@
-source :gemcutter
-gem 'thin'
-gem 'mercury'
+source 'https://rubygems.org'
+gem 'rack'
+gem 'sass'
+gem 'haml'
+gem 'coffee-script'
+gem "unicorn"
+gem 'stasis'
+gem 'redcarpet'
+#gem 'compass'

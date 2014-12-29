@@ -1,14 +1,3 @@
-=gradient(!type, !coords, !color_start, !color_end, !color_stop = false)
-	!gradient= "#{!coords}, from(#{!color_start}), to(#{!color_end})"
-	@if !color_stop
-		!gradient= !gradient + ", " + !color_stop
-	background: -webkit-gradient(#{!type}, #{!gradient})
-	background: -moz-#{!type}-gradient(#{!gradient})
-
-=linear-gradient(!start, !end, !color1, !color2, !color_stop = false)
-	!coords = !start + ", " + !end
-	+gradient("linear", !coords, !color1, !color2, !color_stop)
-
 body
 	:background #666 url(/bg.png) repeat
 	:color #EEE
@@ -23,7 +12,7 @@ a
 		:color #fefefe
 #header
 	:background-color #333
-	+linear-gradient("center bottom","center top","#333","#515151")
+	//+linear-gradient("center bottom","center top","#333","#515151")
 	:padding-top 1em
 	:text-shadow rgba(0,0,0,0.75) 1px 1px 0px
 	:margin-bottom 1.5em
@@ -93,7 +82,7 @@ table
 		:-webkit-box-shadow #111 1px 1px 0px
 		:box-shadow #111 1px 1px 0px
 		:border-bottom #555 1px solid
-		+linear-gradient("center bottom","center top","#444","#555")
+		//+linear-gradient("center bottom","center top","#444","#555")
 		
 	h3
 		:color #ADD8C7
